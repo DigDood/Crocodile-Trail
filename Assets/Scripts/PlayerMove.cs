@@ -51,7 +51,7 @@ public class PlayerMove : MonoBehaviour
             collision.transform.GetComponent<Rigidbody>().useGravity = true;
             collision.transform.GetComponent<Rigidbody>().isKinematic = false;
             speed = 0;
-            transform.position = 70c12ollision.transform.position + Vector3.up;
+            transform.position = collision.transform.position + Vector3.up;
             collision.transform.tag = "Untagged";
         }
     }
